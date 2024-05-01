@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.block {
+  display: block;
+  width: 100%; /* Takes the full width of the page */
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box; /* Includes padding and border in the element's width */
+  border-bottom: 1px solid #ccc;
+}
+
+.inline-block {
+  display: inline-block;
+  margin: 0 10px; /* Adds spacing between navigation links */
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+}
+
+.inline-block:hover {
+  background-color: #0056b3;
+}
+
+section > .inline-block {
+  vertical-align: top; /* Aligns inline-block elements at their top edge */
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+header h1, footer p {
+  margin: 0;
+}
