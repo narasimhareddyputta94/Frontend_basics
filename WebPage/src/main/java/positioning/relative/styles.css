@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  margin: 20px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.normal-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 10px;
+}
+
+.shifted-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  margin: 10px;
+  top: 20px; /* Moves the box 20 pixels down from its normal position */
+  left: 30px; /* Moves the box 30 pixels to the right from its normal position */
+}
