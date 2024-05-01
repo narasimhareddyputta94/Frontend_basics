@@ -1,0 +1,9 @@
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 20px; /* Padding around the content inside the box */
+  border: 5px solid red; /* Solid red border */
+  background-color: lightblue; /* Background color inside the box */
+}
+
+/* You can experiment by changing the width, height, padding, and border properties. */
