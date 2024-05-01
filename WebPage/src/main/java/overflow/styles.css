@@ -1,0 +1,74 @@
+.overflow-example {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-top: 40px;
+}
+
+.overflow-example {
+  width: 300px;
+  height: 120px;
+  margin-bottom: 20px;
+  border: 2px solid #2c3e50;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.overflow-example:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.overflow-visible, .overflow-hidden, .overflow-scroll, .overflow-auto {
+  overflow-y: auto; /* Adjusts to show scroll only when needed, except for 'hidden' */
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow-y: scroll; /* Always shows vertical scrollbar */
+}
+
+.overflow-auto {
+  overflow: auto; /* Automatically decides whether to show scrollbar */
+}
+
+/* Adding a little padding and margin around the content inside the containers for better readability */
+p {
+  margin: 0;
+  padding: 8px 0;
+}
+
