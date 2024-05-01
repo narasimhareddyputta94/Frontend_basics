@@ -1,0 +1,36 @@
+/* Base font size for the document */
+html {
+  font-size: 16px; /* This sets 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem; /* Padding is 16px because 1rem equals the font-size of the html element */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+aside {
+  width: 25%; /* Width is 25% of the container's width */
+  background-color: #30b691;
+  padding: 20px; /* Padding in pixels */
+  color: #333;
+}
+
+section {
+  flex-grow: 1; /* Takes the remaining space in the container */
+  padding: 2em; /* Padding is 2 times the font-size of the section */
+  font-size: 1.25rem; /* This is 20px, as it's based on the html font-size */
+  background-color: #c55a5a;
+  min-height: 50vh; /* Minimum height is 50% of the viewport height */
+}
