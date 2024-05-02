@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 50px; /* Space for the fixed header */
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #cc2626;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000; /* Ensures the nav is above other content */
+}
+
+.content p {
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #1766b0;
+  background-color: #28e0ae;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #666;
+  color: #5b510d;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  z-index: 1000;
+}
