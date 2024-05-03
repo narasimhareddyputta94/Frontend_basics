@@ -1,0 +1,105 @@
+/* Basic Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+header, section, footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive Grid for Services */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive Image */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Typography */
+h1, h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+  margin: 0 0 20px;
+}
+
+/* Form Styles */
+form input, form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #5C67F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  form input, form textarea, form button {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5em;
+  }
+}
